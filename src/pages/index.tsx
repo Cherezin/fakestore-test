@@ -31,7 +31,7 @@ const Home: React.FC = () => {
     <div>
       {products.map(product => (
         <div key={product.id}>
-          <Image src={product.image} alt={product.title} />
+          <Image src={product.image} alt={product.title} width={300} height={300}/>
           <h2>{product.title}</h2>
           <p>Preço: R${product.price}</p>
           <Link href={`/products/${product.id}`}>Ver Detalhes</Link>
