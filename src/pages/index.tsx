@@ -1,3 +1,16 @@
+interface Products {
+  id: 1,
+  title: string,
+  image: string,
+  price: number,
+  description: string,
+  brand: string,
+  model: string,
+  color: string,
+  category: string,
+  discount: number
+}
+
 const Home: React.FC = () => {
   return (
     <div>
