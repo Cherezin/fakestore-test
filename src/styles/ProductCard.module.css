@@ -1,0 +1,44 @@
+.buttonDetails {
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 8px; 
+    border: none;
+}
+
+.buttonDetails:hover{
+    background: #C0C0C0;
+    transition: 0.8s;
+}
+
+.buttonAddCar{
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    border-radius: 8px; 
+    border: none;
+    padding: 10px
+}
+
+.buttonAddCar:hover{
+    background: #00FF7F;
+    transition: 0.8s;
+}
+
+.title {
+    display: -webkit-box; /* Garante a compatibilidade com navegadores que suportam WebKit */
+    -webkit-line-clamp: 2; /* Limita o texto a 2 linhas */
+    -webkit-box-orient: vertical; /* Define a orientação da caixa de texto */
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona os "..." no final do texto */
+}
