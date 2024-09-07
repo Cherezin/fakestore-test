@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import styleHome from '../styles/Home.module.css'
 import ProductCard from "@/components/ProductCard";
+import { Header } from "./header";
 
 interface Products {
   id: number,
@@ -50,22 +51,14 @@ const Home: React.FC = () => {
 
   return (
     <div className={styleHome.container}>
-      <h1>Product List</h1>
-
-      <input 
-      type="text" 
-      placeholder="Pesquisar produtos"
-      value={searchTerm}
-      onChange={(e) => setSearchTerm(e.target.value)}
-      />
-
-      <button onClick={() => allProducts()}>Todos</button>
-      <button onClick={() => filterCategory("men's clothing")}>Men</button>
-      <button onClick={() => filterCategory("women's clothing")}>Women</button>
-      <button onClick={() => filterCategory("electronics")}>Electronics</button>
-      <button onClick={() => filterCategory("jewelery")}>Jewelry</button>
       
-
+      <Header
+      allProducts={allProducts}
+      filterCategory={filterCategory}
+      setSearchTerm={setSearchTerm}
+      searchTerm={searchTerm}
+      />
+      
       <div className={styleHome.grid}>
         {isFilteredProducts.map(product => (
           <ProductCard key={product.id} product={product} />
