@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
+import axios from 'axios';
+
 interface Products {
-  id: 1,
+  id: number,
   title: string,
   image: string,
   price: number,
@@ -12,6 +15,14 @@ interface Products {
 }
 
 const Home: React.FC = () => {
+  const [products, setProducts] = useState<Products[]>([])
+
+  useEffect(() => {
+    axios.get<Products[]>('https://fakestoreapi.com/products')
+    .then(response => setProducts(response.data))
+    .catch(error => console.error('Error fetching products:', error));
+  }, [])
+
   return (
     <div>
       <h1>Hello World</h1>
