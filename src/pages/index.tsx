@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import Image from "next/image";
+import Link from "next/link";
 
 interface Products {
   id: number,
@@ -25,9 +27,20 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Product List</h1>
+    <div>
+      {products.map(product => (
+        <div key={product.id}>
+          <Image src={product.image} alt={product.title} />
+          <h2>{product.title}</h2>
+          <p>Preço: R${product.price}</p>
+          <Link href={`/products/${product.id}`}>Ver Detalhes</Link>
+        </div>
+        
+      ))}
     </div>
-  );
+    </div>
+  )
 };
 
 export default Home;
