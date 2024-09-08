@@ -1,24 +1,21 @@
-.container{
+.container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); /* 200px -> 12.5rem */
+    gap: 1.25rem; 
+    padding-top: 13rem;
 }
 
 .grid div {
-    padding: 16px;
+    padding: 1rem;
     border: 1px solid #ddd;
-    border-radius: 8px; 
+    border-radius: 0.5rem;
     position: relative;
-    height: 370px;
+    height: 23.125rem;
 }
-
-
-
