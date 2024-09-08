@@ -1,0 +1,102 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #B0E0E6;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    z-index: 50;
+}
+
+.input {
+    background: transparent;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.divForInput {
+    background-color: #f4f4f5;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 100%; /* Ajusta a largura para o contêiner pai */
+    max-width: 400px; /* Define uma largura máxima */
+}
+
+.buttonHeader {
+    width: 100%; /* Ajusta a largura para o contêiner pai */
+    max-width: 6rem; /* Define uma largura máxima */
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonHeaderAll {
+    width: 100%; /* Ajusta a largura para o contêiner pai */
+    max-width: 3rem; /* Define uma largura máxima */
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divForInputAndButton {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço suficiente */
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões envolvam e se ajustem ao tamanho da tela */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 0.75rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .divForInput {
+        width: 90%; /* Ajusta a largura para a tela menor */
+        max-width: none; /* Remove o limite de largura máxima */
+    }
+
+    .buttonHeader, .buttonHeaderAll {
+        margin: 0.25rem 0; /* Adiciona margem para botões em linha */
+    }
+
+    .header {
+        padding-top: 1rem; /* Ajusta o padding para uma tela menor */
+        padding-bottom: 1.5rem; /* Ajusta o padding para uma tela menor */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte do título para telas pequenas */
+    }
+
+    .buttonHeader, .buttonHeaderAll {
+        height: 1.5rem; /* Ajusta a altura dos botões para telas menores */
+        margin: 0.1px;
+        font-size: 0.875rem; /* Ajusta o tamanho da fonte dos botões para telas menores */;
+    }
+}
