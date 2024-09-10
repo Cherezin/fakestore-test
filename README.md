@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 FakeStore Test
 
-## Getting Started
+Esse projeto é uma aplicação de e-commerce simples, consumindo dados de uma API fictícia para exibir produtos e permitir que os usuários interajam com eles.
 
-First, run the development server:
+## 📦 Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🛍️ **Listagem de produtos**: Navegue por uma lista de produtos fictícios.
+- 🔍 **Detalhes do produto**: Veja mais informações sobre um produto específico.
+- 📱 **Responsividade**: Layout otimizado para diferentes tamanhos de tela.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Estilização
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🖼️ Interface moderna e responsiva.
+- 🎨 Paleta de cores suave com uso de transições para uma melhor experiência de usuário.
+- 💻 Ajustes para melhor usabilidade em dispositivos móveis e desktops.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tecnologias Utilizadas
 
-## Learn More
+- ⚛️ **React**: Para criação da interface do usuário.
+- 🟦 **TypeScript**: Para adicionar tipagem estática, garantindo maior segurança, evitando erros de tipo e trazendo um desenvolvimento mais estruturado.
+- 🔧 **Axios**: Para fazer requisições HTTP à API.
+- 🖌️ **CSS Modules**: Estilização da aplicação.
+- 🛠️ **Lucide Icons**: Biblioteca de ícones.
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Como Rodar o Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone o repositório:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/Cherezin/fakestore-test.git
+   ```
 
-## Deploy on Vercel
+ 2. Instale as dependências:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+     npm install
+     ```
+ 3. Rode o projeto localmente:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+     npm run dev
+     ```
+ 4. Abra o navegador e acesse:
+
+    ```bash
+     http://localhost:3000
+     ```
