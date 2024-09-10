@@ -8,29 +8,29 @@ interface HeaderProps {
     filterCategory: (category: string) => void
 }
 
-export function Header( {
+const Header: React.FC<HeaderProps> = ({
     searchTerm,
     setSearchTerm,
     allProducts,
     filterCategory,
-} : HeaderProps){
-    return(
+}) => {
+    return (
         <div className={style.header}>
             <h1>Fake Store</h1>
 
             <div className={style.divShoppingBagHome}>
-                        <button className={style.shoppingBag}>
-                            <ShoppingBag />
-                        </button>
-                    </div>
+                <button className={style.shoppingBag}>
+                    <ShoppingBag />
+                </button>
+            </div>
             <div className={style.divForInputAndButton}>
                 <div className={style.divForInput}>
                     <input 
-                    type="text" 
-                    placeholder="Pesquisar produtos"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className={style.input}
+                        type="text" 
+                        placeholder="Pesquisar produtos"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className={style.input}
                     />
                 </div>
 
@@ -48,3 +48,5 @@ export function Header( {
         </div>
     )
 }
+
+export default Header;

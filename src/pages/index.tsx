@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import styleHome from '../styles/Home.module.css'
 import ProductCard from "@/components/ProductCard";
-import { Header } from "./header";
+import Header from "./header";
 
 interface Products {
   id: number,
