@@ -9,16 +9,19 @@
     right: 1rem;
     border-radius: 0.5rem; 
     border: none;
+    padding:  1.30rem 1rem 1.30rem 1rem;
+    color: white;
+    background: #008080;
 }
 
 .buttonDetails:hover{
-    background: #C0C0C0;
+    background: #20B2AA;
     transition: 0.8s;
 }
 
 .buttonAddCar{
     height: 1.875rem;
-    width: 60%; /* Define a largura como 20% do contêiner pai */
+    width: 55%; /* Define a largura como 20% do contêiner pai */
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -27,12 +30,14 @@
     bottom: 1rem;
     left: 1rem;
     border-radius: 0.5rem; 
-    border: none;
-    padding:  0.625rem;
+    border: 2px solid ;
+    padding:  1.25rem;
+    color: #008080;
+    background: white;
 }
 
 .buttonAddCar:hover{
-    background: #00FF7F;
+    color: #20B2AA;
     transition: 0.8s;
 }
 

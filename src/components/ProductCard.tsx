@@ -1,4 +1,4 @@
-import { Eye } from "lucide-react";
+import { Eye, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import styleCard from '../styles/ProductCard.module.css'
@@ -26,7 +26,7 @@ const ProductCard: React.FC<{ product: Products }> = ({ product }) => {
             </Link>
 
             <button className={styleCard.buttonAddCar}>
-                Adicionar ao carrinho
+                <ShoppingCart />
             </button>
 
         </div>
