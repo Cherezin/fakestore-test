@@ -1,17 +1,19 @@
+import React from 'react';
+
 interface HeaderProps {
-    searchTerm: string
-    setSearchTerm: (e: string) => void
-    allProducts: () => void
-    filterCategory: (category: string) => void
+    searchTerm: string;
+    setSearchTerm: (e: string) => void;
+    allProducts: () => void;
+    filterCategory: (category: string) => void;
 }
 
-export function Header( {
+const Header: React.FC<HeaderProps> = ({
     searchTerm,
     setSearchTerm,
     allProducts,
     filterCategory,
-} : HeaderProps){
-    return(
+}) => {
+    return (
         <div>
             <h1>Product List</h1>
 
@@ -28,5 +30,7 @@ export function Header( {
             <button onClick={() => filterCategory("electronics")}>Electronics</button>
             <button onClick={() => filterCategory("jewelery")}>Jewelry</button>
         </div>
-    )
+    );
 }
+
+export default Header;
