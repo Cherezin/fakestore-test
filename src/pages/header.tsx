@@ -1,4 +1,4 @@
-import { LayoutGrid } from 'lucide-react'
+import { LayoutGrid, ShoppingBag } from 'lucide-react'
 import style from '../styles/Header.module.css'
 
 interface HeaderProps {
@@ -18,6 +18,11 @@ export function Header( {
         <div className={style.header}>
             <h1>Fake Store</h1>
 
+            <div className={style.divShoppingBagHome}>
+                        <button className={style.shoppingBag}>
+                            <ShoppingBag />
+                        </button>
+                    </div>
             <div className={style.divForInputAndButton}>
                 <div className={style.divForInput}>
                     <input 

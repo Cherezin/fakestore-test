@@ -1,8 +1,12 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import styleHome from '../../styles/Home.module.css'
-import Image from "next/image";
+import stylePD from '../../styles/ProductDetails.module.css'
+import styleHeader from '../../styles/Header.module.css'
+import Link from "next/link";
+import {  ShoppingBag } from "lucide-react";
+import { AddToCart } from "./addToCart";
+import InfoProduct from "./infoProduct";
 
 interface Product {
     id: number,
@@ -15,7 +19,7 @@ interface Product {
     color: string,
     category: string,
     discount: number
-  }
+}
 
 const ProductDetails: React.FC = () => {
     const router = useRouter();
@@ -33,12 +37,30 @@ const ProductDetails: React.FC = () => {
     if (!product) return <div>Loading...</div>;
     
     return (
-        <div className={styleHome.container}>
-            <h1>{product.title}</h1>
-            <Image src={product.image} alt={product.title} width={300} height={300}/>
-            <p>Preço: {product.price}</p>
-            <p>Descrição: {product.description}</p>
-            <p>Categoria: {product.category}</p>
+        <div>
+
+            {/*Header*/}
+            <div className={styleHeader.header}>
+                    <Link className={styleHeader.title} href={'/'}>
+                        <h1>Fake Store</h1>
+                    </Link>
+                    
+                    <div className={styleHeader.divShoppingBag}>
+                        <button className={styleHeader.shoppingBag}>
+                            <ShoppingBag />
+                        </button>
+                    </div>
+            </div>
+
+            <div className={stylePD.fullscreenDiv}>
+                <div className={stylePD.container}>
+
+                    <InfoProduct product={product}/>
+
+                    <AddToCart />
+
+                </div>
+            </div>
         </div>
     )
 }
