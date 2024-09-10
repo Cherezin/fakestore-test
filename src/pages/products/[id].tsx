@@ -5,8 +5,8 @@ import stylePD from '../../styles/ProductDetails.module.css'
 import styleHeader from '../../styles/Header.module.css'
 import Link from "next/link";
 import {  ShoppingBag } from "lucide-react";
-import { AddToCart } from "./addToCart";
 import InfoProduct from "./infoProduct";
+import AddToCart from "./addToCart";
 
 interface Product {
     id: number,
