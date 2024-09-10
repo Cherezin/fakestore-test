@@ -1,36 +1,42 @@
-import { Package, ShieldCheck, ShoppingCart, Truck } from 'lucide-react'
-import stylePD from '../../styles/ProductDetails.module.css'
+import { Package, ShieldCheck, ShoppingCart, Truck } from 'lucide-react';
+import stylePD from '../../styles/ProductDetails.module.css';
 
-export function AddToCart(){
+const AddToCart: React.FC = () => {
     return (
         <div className={stylePD.addToCar}>
             <div className={stylePD.info}>
 
                 <div className={stylePD.divForInput}>
                     <input 
-                    placeholder="Digite seu CEP" 
-                    type="text"
-                    className={stylePD.input}
+                        placeholder="Digite seu CEP" 
+                        type="text"
+                        className={stylePD.input}
                     />
                 </div>
 
-                {/*Frete*/}
-                <p className={stylePD.subTitleAddCar}><Truck />Frete Grátis para todo Brasil</p>
+                {/* Frete */}
+                <p className={stylePD.subTitleAddCar}>
+                    <Truck /> Frete Grátis para todo Brasil
+                </p>
                 
-                {/*Security*/}
+                {/* Segurança e Privacidade */}
                 <div className={stylePD.security}>
-                    <span className={stylePD.subTitleAddCar}><ShieldCheck /> Segurança e privacidade</span>
-                    <span className={stylePD.span}>
-                    <strong>Pagamentos seguros:</strong> Nós não compartilhamos seus dados com terceiros sem sua perimisão.
+                    <span className={stylePD.subTitleAddCar}>
+                        <ShieldCheck /> Segurança e privacidade
                     </span>
                     <span className={stylePD.span}>
-                    <strong>Dados pessoais seguros:</strong> Nós protegemos sua privacidade e mantemos suas informações pessoais seguras.
+                        <strong>Pagamentos seguros:</strong> Nós não compartilhamos seus dados com terceiros sem sua permissão.
+                    </span>
+                    <span className={stylePD.span}>
+                        <strong>Dados pessoais seguros:</strong> Nós protegemos sua privacidade e mantemos suas informações pessoais seguras.
                     </span>
                 </div>
 
-                {/*Info Frete*/}
-                <div className={stylePD.frete}>                       
-                    <span className={stylePD.subTitleAddCar}> <Package />Entrega rápida</span>
+                {/* Info Frete */}
+                <div className={stylePD.frete}>
+                    <span className={stylePD.subTitleAddCar}>
+                        <Package /> Entrega rápida
+                    </span>
                     <span className={stylePD.span}>Cupom de R$5,00 por entrega atrasada</span>
                     <span className={stylePD.span}>Reembolso se itens chegarem com dano</span>
                     <span className={stylePD.span}>Reembolso se o pacote for perdido</span>
@@ -39,10 +45,10 @@ export function AddToCart(){
                 
             </div>
 
-            <div className={stylePD.divForAddToCar}><span></span>
+            <div className={stylePD.divForAddToCar}>
                 <div className={stylePD.numberImput}>
                     <span>Quantidade:</span>
-                    <input className={stylePD.customNumberImput} type="number" name="number" min={0}/>
+                    <input className={stylePD.customNumberImput} type="number" name="number" min={0} />
                 </div>
                 <div className={stylePD.buyNowDivButton}>
                     <button className={stylePD.buttonBuyNow}>Compre agora</button>
@@ -52,5 +58,7 @@ export function AddToCart(){
                 </div> 
             </div>
         </div>
-    )
+    );
 }
+
+export default AddToCart;
