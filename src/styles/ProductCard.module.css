@@ -1,37 +1,43 @@
 .buttonDetails {
-    height: 30px;
+    height: 1.875rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 16px;
-    right: 16px;
-    border-radius: 8px; 
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 0.5rem; 
     border: none;
+    padding:  1.30rem 1rem 1.30rem 1rem;
+    color: white;
+    background: #008080;
 }
 
 .buttonDetails:hover{
-    background: #C0C0C0;
+    background: #20B2AA;
     transition: 0.8s;
 }
 
 .buttonAddCar{
-    height: 30px;
+    height: 1.875rem;
+    width: 55%; /* Define a largura como 20% do contêiner pai */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 16px;
-    left: 16px;
-    border-radius: 8px; 
-    border: none;
-    padding: 10px
+    bottom: 1rem;
+    left: 1rem;
+    border-radius: 0.5rem; 
+    border: 2px solid ;
+    padding:  1.25rem;
+    color: #008080;
+    background: white;
 }
 
 .buttonAddCar:hover{
-    background: #00FF7F;
+    color: #20B2AA;
     transition: 0.8s;
 }
 

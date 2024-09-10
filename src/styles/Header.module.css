@@ -1,0 +1,137 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #B0E0E6;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    z-index: 50;
+}
+
+.input {
+    background: transparent;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.divForInput {
+    background-color: #f4f4f5;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 100%; 
+    max-width: 400px; 
+    
+}
+
+.buttonHeader {
+    width: 100%; 
+    max-width: 6rem; 
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonHeaderAll {
+    width: 100%; 
+    max-width: 3rem; 
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divForInputAndButton {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço suficiente */
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões envolvam e se ajustem ao tamanho da tela */
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.title{
+    text-decoration: none;
+    text-color: black;
+    position: relative;
+    height: 4rem;
+}
+
+.title:visited {
+    color: inherit; /* Ou qualquer cor que desejar */
+}
+
+.shoppingBag{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.divShoppingBag{
+    background: #E0FFFF;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 3%;
+}
+
+.divShoppingBagHome{
+    background: #E0FFFF;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 3%;
+    top: 10%;
+}
+
+@media (max-width: 768px) {
+    .divForInput {
+        width: 90%; 
+        max-width: none; 
+    }
+
+    .buttonHeader, .buttonHeaderAll {
+        margin: 0.25rem 0; 
+    }
+
+    .header {
+        padding-top: 1rem; 
+        padding-bottom: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem; 
+    }
+
+    .buttonHeader, .buttonHeaderAll {
+        height: 1.5rem; 
+        margin: 0.1px;
+        font-size: 0.875rem;
+    }
+}

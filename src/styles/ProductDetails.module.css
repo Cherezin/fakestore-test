@@ -1,0 +1,241 @@
+.container{
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f0f0f0;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: left;
+}
+
+.divMother{
+    border-radius: 1rem;
+    max-width: 70rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    height: 70%;
+}
+
+.addToCar {
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    position: relative;
+    align-items: center;
+    gap: .25rem;
+    background-color: white;
+    height: 73%;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #008080;
+}
+
+.buttonBuyNow {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.buttonBuyNow:hover{
+    color: black;
+}
+
+.buyNowDivButton:hover{
+    background: #7FFFD4;
+    transition: 0.4s;
+}
+
+.shoppingCartButton{
+    padding: 0.20rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    border: 2px solid #008080;
+    background: #E0FFFF;
+}
+
+.buyNowDivButton{
+    padding: 0.20rem;
+    max-width: 100%;
+    background: #008080;
+    border-radius: 1rem;
+    text-color: white;
+    padding: 0.50rem 2.25rem 0.50rem 2.25rem;
+    cursor: pointer;
+}
+
+.divForAddToCar{
+    position: absolute;
+    bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
+}
+
+.info{
+    position: absolute;
+    top: 2rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.input {
+    background: transparent;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.divForInput {
+    background-color: #f4f4f5;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+
+.span {
+    font-size: 0.8em;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.subTitleAddCar{
+    display: flex;  
+    align-items: center;
+    gap: 0.10rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.fullscreenDiv {
+    width: 100%;  
+    height: 100vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    background-color: white; 
+}
+
+.numberImput{
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    gap: .5rem;
+}
+
+.customNumberImput {
+    width: 5rem;
+    padding: 0.5rem;  
+    border: 2px solid #ccc;  
+    border-radius: 0.25rem;  
+    font-size: 1rem;  
+    text-align: center; 
+    outline: none;  
+}
+
+.customNumberImput:focus {
+    border-color: #007BFF;  
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+@media (max-width: 1502px) {
+    .container {
+        padding: 1rem;
+        flex-direction: column;
+        padding-top: 83rem;
+        height: 100%;
+    }
+
+    .frame {
+        flex-direction: column;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .divMother {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .addToCar {
+        width: 100%;
+        height: auto;
+        margin-bottom: 35rem;
+    }
+
+    .info {
+        position: relative;
+        top: auto;
+        padding: 2rem;
+        text-align: center;
+        margin-bottom: 13rem;
+    }
+
+    .divForAddToCar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 97rem;
+    }
+
+    .addToCar {
+        margin-bottom: 41rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 103rem;
+    }
+
+    .button {
+        padding: 0.5rem;
+    }
+
+    .customNumberImput {
+        width: 4rem;
+        font-size: 0.9rem;
+    }
+
+    .span {
+        font-size: 0.75em;
+    }
+
+    .addToCar {
+        margin-bottom: 45rem;
+    }
+}
