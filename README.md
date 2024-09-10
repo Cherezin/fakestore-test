@@ -29,18 +29,24 @@ Esse projeto é uma aplicação de e-commerce simples, consumindo dados de uma A
    ```bash
    git clone https://github.com/Cherezin/fakestore-test.git
    ```
+   
+2. Navegue até a pasta:
 
- 2. Instale as dependências:
+   ```bash
+   cd fakestore-test
+   ```
+
+ 3. Instale as dependências:
 
     ```bash
      npm install
      ```
- 3. Rode o projeto localmente:
+ 4. Rode o projeto localmente:
 
     ```bash
      npm run dev
      ```
- 4. Abra o navegador e acesse:
+ 5. Abra o navegador e acesse:
 
     ```bash
      http://localhost:3000
